@@ -1,6 +1,7 @@
 const booksModel = require('./model');
+
 /**
- * @method getChartData
+ * @method booksCount
  * @param {any}
  * @returns {any}
  */
@@ -15,7 +16,11 @@ async function booksCount() {
     return cursor;
 }
 
-// booksCount().then((res) => console.log(res));
+/**
+ * @method getChartData
+ * @param {any}
+ * @returns {any}
+ */
 async function getChartData() {
     const data = [];
     const cursor = await booksCount();
@@ -25,6 +30,7 @@ async function getChartData() {
     }));
     return data;
 }
+
 module.exports = {
     getChartData,
 };

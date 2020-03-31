@@ -3,6 +3,12 @@ const csv = require('csvtojson');
 
 const csvFilePath = (path.join(__dirname, '../../books.csv'));
 
+/**
+ * @method getDataFromBooksCsv
+ * @param {any}
+ * @returns {any}
+ */
+
 function getDataFromBooksCsv() {
     return csv()
         .fromFile(csvFilePath);

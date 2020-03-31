@@ -1,6 +1,5 @@
 const { getChartData } = require('./service');
 
-
 /**
  * @function
  * @param {express.Request} req
@@ -22,7 +21,6 @@ async function chart(req, res, next) {
         return next(error);
     }
 }
-
 
 module.exports = {
     chart,

@@ -3,8 +3,7 @@
     "version": "0.0.1",
     "main": "./src/server/index.js",
     "scripts": {
-        "start": "npm run migrate && node src/server/index.js",
-        "migrate": "migrate-mongo up",
+        "start": "node src/server/index.js",
         "test": "npx mocha ./__test__ --exit"
     },
     "dependencies": {

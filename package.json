@@ -1,9 +1,10 @@
 {
-    "name": "lesson3",
+    "name": "lesson6",
     "version": "0.0.1",
     "main": "./src/server/index.js",
     "scripts": {
-        "start": "node src/server/index.js",
+        "start": "npm run migrate && node src/server/index.js",
+        "migrate": "migrate-mongo up",
         "test": "npx mocha ./__test__ --exit"
     },
     "dependencies": {
@@ -19,6 +20,7 @@
         "eslint-config-airbnb": "18.0.1",
         "express": "4.16.2",
         "helmet": "3.9.0",
+        "migrate-mongo": "7.1.0",
         "mocha": "7.1.0",
         "mongoose": "5.7.5",
         "supertest": "4.0.2"
